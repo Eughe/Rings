@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter&display=swap');
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    background-image: url(../Img/clean-textile.png);
+    background-color: #f4f4e8;
+}
+
+header{
+    padding: 30px;
+}
+
+.wrapper {
+    outline: 1px; 
+    max-width:90%;
+    margin: 40px auto;
+}
+
+main {
+    text-align: center;
+}
+
+body {
+   
+    font-family: "Georgia", "Book Antiqua", serif;
+}
+
+
+
+.footer {
+    height: 150px;
+    background: #000;
+    color: rgb(255, 255, 255);
+}
+
+.chapter {
+    font-family: "Comforter", "Book Antiqua", serif;
+    font-size:xx-large;
+    color: rgb(107, 93, 53);
+    padding: 20px;
+}
