@@ -19,15 +19,18 @@ header{
     padding: 30px;
 }
 
-.wrapper {
-    outline: 1px; 
-    max-width:90%;
-    margin: 40px auto;
-}
-
 main {
     text-align: center;
 }
+
+.wrapper {
+    outline: 1px; 
+    max-width:95%;
+    margin: 0px auto;
+    text-align: left;
+}
+
+
 
 body {
    
