@@ -11,43 +11,89 @@
 
 html {
     scroll-behavior: smooth;
-    background-image: url(../Img/clean-textile.png);
-    background-color: #f4f4e8;
 }
-
-header{
-    padding: 30px;
-}
-
-main {
-    text-align: center;
-}
-
-.wrapper {
-    outline: 1px; 
-    max-width:95%;
-    margin: 0px auto;
-    text-align: left;
-}
-
-
 
 body {
    
     font-family: "Georgia", "Book Antiqua", serif;
+    background-image: url(../Img/clean-textile.png);
+    background-color: #f4f4e8;
 }
 
-
-
-.footer {
-    height: 150px;
-    background: #000;
-    color: rgb(255, 255, 255);
+.wrapper{
+    outline: 1px; 
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
 }
 
-.chapter {
+.h1{
+    font-size: 2em;
+    text-align: center;
+    padding: 20px;  
+}
+
+header{
+    background: linear-gradient(#f4f4e8, #d8d8c1);
+    padding: 30px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+header ul a{
+    text-decoration: none;
+    }
+
+header ul li{
+    display: inline;
+    background-color: aqua;
+    width: 100px;
+    
+}
+
+.chapter{
     font-family: "Comforter", "Book Antiqua", serif;
     font-size:xx-large;
     color: rgb(107, 93, 53);
     padding: 20px;
 }
+
+.image{
+    max-width: 100%;
+    padding: 0 20px 20px 0;
+    float: left;
+}
+
+.image2{
+    max-width: 100%;
+    padding: 0 0 20px 20px;
+    float: right;
+}
+
+footer{
+    height: 70px;
+    background-color: #d8d8c1;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.btn{
+    background-color: rgb(107, 93, 53);
+    color: #fff;
+    line-height: 70px;
+    height: 30px;
+    width: 170px;
+    margin: 30px;
+    border: 3px solid rgb(107, 93, 53);
+    padding: 7px 12px; 
+    text-align: center;
+    text-decoration: none; 
+    border-radius: 7px; 
+}
+
+.btn:hover{
+    background-color: #d8d8c1;
+    color: rgb(107, 93, 53); 
+    transition: 1s;
+    }
