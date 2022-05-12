@@ -14,7 +14,6 @@ html {
 }
 
 body {
-   
     font-family: "Georgia", "Book Antiqua", serif;
     background-image: url(../Img/clean-textile.png);
     background-color: #f4f4e8;
@@ -25,11 +24,11 @@ body {
     max-width: 1170px;
     margin-left: auto;
     margin-right: auto;
-    padding: 20px;
 }
 
 .h1{
     font-size: 2em;
+    color: rgb(66, 9, 13);
     text-align: center;
     padding: 20px;  
 }
@@ -41,15 +40,55 @@ header{
     margin-bottom: 30px;
 }
 
-header ul a{
-    text-decoration: none;
-    }
+.nav {
+    margin-top: 20px;
+}
 
-header ul li{
-    display: inline;
-    background-color: aqua;
-    width: 100px;
-    
+.nav ul li{
+    display: inline-block;
+    text-align: center;
+    padding: 7px;
+    width: 20%;
+    min-height: 70px;
+    vertical-align: middle;
+    background-color: #c0c098;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color: rgb(90, 5, 11);
+    display: block;
+    padding: 0;
+    height: 60px;
+}
+
+.m1, .m2, .m3, .m4, .m5{
+    border: solid rgb(139, 120, 65);
+    transition: all 0.1s;
+}
+
+.m1{
+    border-width: 1px 3px 3px 1px;
+    border-radius: 17px 0 0 17px;    
+}
+
+.m2, .m3, .m4{
+    border-width: 1px 3px 3px 1px;
+}
+
+.m5{
+    border-width: 1px 3px 3px 1px ;
+    border-radius: 0 17px 17px 0;
+}
+
+.m1:hover, .m2:hover, .m3:hover, .m4:hover, .m5:hover{
+    background: linear-gradient(#d8d8c1, #c0c098) ;
+}
+
+.m1:active, .m2:active, .m3:active, .m4:active, .m5:active{
+	transform: translate(0px,1px);
+    border-width: 5px 1px 1px 5px;
+    box-shadow: inset 6px 6px 20px rgba(139, 120, 65,0.5);
 }
 
 .chapter{
@@ -59,17 +98,33 @@ header ul li{
     padding: 20px;
 }
 
-.image{
-    max-width: 100%;
-    padding: 0 20px 20px 0;
+.image1, .image2{
+    max-width: 550px;
+    height: 290px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.image1{
+    margin: 0 20px 20px 0;
     float: left;
 }
 
 .image2{
-    max-width: 100%;
-    padding: 0 0 20px 20px;
+    margin: 0 0 20px 20px;
     float: right;
 }
+
+ 
+.image1 img, .image2 img{
+    max-width: 100%;
+    transition: 0.8s;
+}
+
+.image1 img:hover, .image2 img:hover{
+    transform: scale(1.2);
+}
+
 
 footer{
     height: 70px;
@@ -79,21 +134,21 @@ footer{
 }
 
 .btn{
-    background-color: rgb(107, 93, 53);
-    color: #fff;
-    line-height: 70px;
     height: 30px;
     width: 170px;
     margin: 30px;
     border: 3px solid rgb(107, 93, 53);
     padding: 7px 12px; 
+    line-height: 70px;
+    background-color: rgb(107, 93, 53);
+    color: #fff;    
     text-align: center;
     text-decoration: none; 
-    border-radius: 7px; 
+    border-radius: 7px;
+    transition: 1s;
 }
 
 .btn:hover{
     background-color: #d8d8c1;
-    color: rgb(107, 93, 53); 
-    transition: 1s;
-    }
+    color: rgb(107, 93, 53);
+}
